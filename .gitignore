@@ -1,0 +1,4 @@
+# Ignore executables and redundant object files
+st
+st.o
+x.o
