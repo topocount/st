@@ -10,6 +10,7 @@ My build of st, with focus on productivity and keyboard-driven workflow.
 - zoom with alt+shift+ {j, k} or ctrl+ {-, =}
 - reset zoom with ctrl+shift+ =
 - insert arbitrary Unicode character with ctrl+shift+u
+- synchronized rendering support
 
 ## Third-Party Dependencies
 
@@ -24,6 +25,7 @@ My build of st, with focus on productivity and keyboard-driven workflow.
 - [externalpipe](https://st.suckless.org/patches/externalpipe/)
 - [scrollback](https://st.suckless.org/patches/scrollback/)
 - [iso14755](https://st.suckless.org/patches/iso14755/)
+- [synchronized rendering](https://st.suckless.org/patches/sync/)
 
 ## References
 
