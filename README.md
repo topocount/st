@@ -1,4 +1,4 @@
-# st - suckless termianl
+# st - suckless terminal
 
 My build of st, with focus on productivity and keyboard-driven workflow.
 
