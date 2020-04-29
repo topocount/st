@@ -5,7 +5,7 @@ My build of st, with focus on productivity and keyboard-driven workflow.
 ## Features
 
 - transparency (need a third-party compositor)
-- select URL to open with alt+u
+- select URL to open with alt+l
 - scroll with alt + {j, k, u, d}
 - zoom with alt+shift+ {j, k} or ctrl+ {-, =}
 - reset zoom with ctrl+shift+ =
