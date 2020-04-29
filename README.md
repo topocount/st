@@ -6,6 +6,9 @@ My build of st, with focus on productivity and keyboard-driven workflow.
 
 - transparency (need a third-party compositor)
 - select URL to open with alt+u
+- scroll with alt + {j, k, u, d}
+- zoom with alt+shift+ {j, k} or ctrl+ {-, =}
+- reset zoom with ctrl+shift+ =
 
 ## Third-Party Dependencies
 
@@ -18,6 +21,7 @@ My build of st, with focus on productivity and keyboard-driven workflow.
 - [anysize](https://st.suckless.org/patches/anysize/)
 - [bold is not bright](https://st.suckless.org/patches/bold-is-not-bright/)
 - [externalpipe](https://st.suckless.org/patches/externalpipe/)
+- [scrollback](https://st.suckless.org/patches/scrollback/)
 
 ## References
 
