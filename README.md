@@ -9,6 +9,7 @@ My build of st, with focus on productivity and keyboard-driven workflow.
 - scroll with alt + {j, k, u, d}
 - zoom with alt+shift+ {j, k} or ctrl+ {-, =}
 - reset zoom with ctrl+shift+ =
+- insert arbitrary Unicode character with ctrl+shift+u
 
 ## Third-Party Dependencies
 
@@ -22,6 +23,7 @@ My build of st, with focus on productivity and keyboard-driven workflow.
 - [bold is not bright](https://st.suckless.org/patches/bold-is-not-bright/)
 - [externalpipe](https://st.suckless.org/patches/externalpipe/)
 - [scrollback](https://st.suckless.org/patches/scrollback/)
+- [iso14755](https://st.suckless.org/patches/iso14755/)
 
 ## References
 

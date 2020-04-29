@@ -204,6 +204,7 @@ static Shortcut shortcuts[] = {
 	{ MODKEY,               XK_d,           kscrolldown,    {.i = -1} },
 	{ XK_ANY_MOD,	        XK_Page_Up,     kscrollup,      {.i = -1} },
 	{ XK_ANY_MOD,           XK_Page_Down,   kscrolldown,    {.i = -1} },
+	{ TERMMOD,              XK_U,           iso14755,       {.i =  0} },
 };
 
 /*
