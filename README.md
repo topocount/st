@@ -11,6 +11,8 @@ My build of st, with focus on productivity and keyboard-driven workflow.
 - reset zoom with ctrl+shift+ =
 - insert arbitrary Unicode character with ctrl+shift+u
 - synchronized rendering support
+- fallback fonts
+- spawn a new terminal in the same directory with ctrl+shift+return
 
 ## Third-Party Dependencies
 
@@ -26,6 +28,9 @@ My build of st, with focus on productivity and keyboard-driven workflow.
 - [scrollback](https://st.suckless.org/patches/scrollback/)
 - [iso14755](https://st.suckless.org/patches/iso14755/)
 - [synchronized rendering](https://st.suckless.org/patches/sync/)
+- [xresources](https://st.suckless.org/patches/xresources/)
+- [font2](https://st.suckless.org/patches/font2/)
+- [newterm](https://st.suckless.org/patches/newterm/)
 
 ## References
 
