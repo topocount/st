@@ -31,6 +31,7 @@ My build of st, with focus on productivity and keyboard-driven workflow.
 - [xresources](https://st.suckless.org/patches/xresources/)
 - [font2](https://st.suckless.org/patches/font2/)
 - [newterm](https://st.suckless.org/patches/newterm/)
+- [boxdraw](https://st.suckless.org/patches/boxdraw/)
 
 ## References
 
