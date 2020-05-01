@@ -16,6 +16,7 @@ My build of st, with focus on productivity and keyboard-driven workflow.
 - spawn a new terminal in the same directory with ctrl+shift+return
 - copy a command's output with alt+o
 - read colorscheme and alpha from Xresources
+- edit the terminal's visible contents in $EDITOR with alt+e
 
 ## Third-Party Dependencies
 
