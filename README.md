@@ -5,7 +5,8 @@ My build of st, with focus on productivity and keyboard-driven workflow.
 ## Features
 
 - transparency (need a third-party compositor)
-- select URL to open with alt+l
+- open a URL with alt+l
+- copy a URL with alt+y
 - scroll with alt + {j, k, u, d}
 - zoom with alt+shift+ {j, k} or ctrl+ {-, =}
 - reset zoom with ctrl+shift+ =
@@ -13,11 +14,14 @@ My build of st, with focus on productivity and keyboard-driven workflow.
 - synchronized rendering support
 - fallback fonts
 - spawn a new terminal in the same directory with ctrl+shift+return
+- copy a command's output with alt+o
+- read colorscheme and alpha from Xresources
 
 ## Third-Party Dependencies
 
 - any window compositor
 - [dmenu](https://tools.suckless.org/dmenu/)
+- [copyq](https://github.com/hluk/copyq) (scripts can be modified by hand to work with any clipboard manager)
 
 ## Applied Patches
 
