@@ -235,8 +235,9 @@ static MouseShortcut mshortcuts[] = {
 #define TERMMOD (ControlMask|ShiftMask)
 
 /* use externalpipe to pipe links to dmenu */
-static char *openurlcmd[] = { "/bin/sh", "-c", "st-script-openurl", "externalpipe", NULL };
-static char *copyurlcmd[] = { "/bin/sh", "-c", "st-script-copyurl", "externalpipe", NULL };
+static char *openurlcmd[]    = { "/bin/sh", "-c", "st-script-openurl",    "externalpipe", NULL };
+static char *copyurlcmd[]    = { "/bin/sh", "-c", "st-script-copyurl",    "externalpipe", NULL };
+static char *copyoutputcmd[] = { "/bin/sh", "-c", "st-script-copyoutput", "externalpipe", NULL };
 
 static Shortcut shortcuts[] = {
 	/* mask                 keysym          function        argument */
@@ -251,6 +252,7 @@ static Shortcut shortcuts[] = {
 	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
 	{ MODKEY, 				XK_l, 			externalpipe, 	{ .v = openurlcmd } },
 	{ MODKEY, 				XK_y, 			externalpipe, 	{ .v = copyurlcmd } },
+	{ MODKEY, 				XK_o, 			externalpipe, 	{ .v = copyoutputcmd } },
 	{ TERMMOD,          	XK_plus,     	zoomreset,      {.f =  0} },
 	{ ControlMask,	       	XK_minus,  		zoom,    		{.f = -1} },
 	{ ControlMask,	       	XK_equal,   	zoom,      		{.f = +1} },

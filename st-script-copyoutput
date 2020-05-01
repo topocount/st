@@ -1,0 +1,23 @@
+#!/bin/sh
+# Using external pipe with st, give a dmenu prompt of recent commands,
+# allowing the user to copy the output of one.
+#
+# Original by Jaywalker and Luke
+# Modified by Randoragon
+
+tmpfile=$(mktemp /tmp/st-script-copyoutput.XXXXXX)
+
+trap 'rm "$tmpfile"' 0 1 15
+
+sed -n "w $tmpfile"
+sed -i 's/\x0//g' "$tmpfile"
+ps1="$(grep "\S" "$tmpfile" | tail -n 1 | sed 's/^\s*//' | cut -d' ' -f1)"
+options="$(grep -F "$ps1" "$tmpfile" | sed '$ d' | tac)"
+[ -z "$options" ] && exit
+chosen="$(printf -- "$options" | dmenu -p "Copy Output" -i -l 10 | sed 's/[^^]/[&]/g; s/\^/\\^/g')"
+eps1="$(echo "$ps1" | sed 's/[^^]/[&]/g; s/\^/\\^/g')"
+output="$(awk "/^$chosen$/{p=1;print;next} p&&/$eps1/{p=0};p" "$tmpfile")"
+[ -n "$output" ] && {
+    copyq add "$output"
+    copyq select 0
+}
