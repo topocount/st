@@ -30,7 +30,7 @@ My build of st, with focus on productivity and keyboard-driven workflow.
 - [anysize](https://st.suckless.org/patches/anysize/)
 - [bold is not bright](https://st.suckless.org/patches/bold-is-not-bright/)
 - [externalpipe](https://st.suckless.org/patches/externalpipe/)
-- [scrollback](https://st.suckless.org/patches/scrollback/)
+- [scrollback](https://st.suckless.org/patches/scrollback/) (altered, see e11b0b24d56035dbbb3dcd20004a52f55dcb4fd9)
 - [iso14755](https://st.suckless.org/patches/iso14755/)
 - [synchronized rendering](https://st.suckless.org/patches/sync/)
 - [xresources](https://st.suckless.org/patches/xresources/)
