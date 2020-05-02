@@ -38,27 +38,10 @@ My build of st, with focus on productivity and keyboard-driven workflow.
 - [newterm](https://st.suckless.org/patches/newterm/)
 - [boxdraw](https://st.suckless.org/patches/boxdraw/)
 
-## References
+## Installation
 
-I used these as sources of inspiration to see some examples of what can be done with st without painful experimentation. Also, the suckless website is a primary source for patches, which are obligatory for any decent st build.
-
-- [Official Website](https://st.suckless.org)
-- [Luke Smith's build](https://github.com/lukesmithxyz/st)
-
-## Original README
-
-st - simple terminal
---------------------
-st is a simple terminal emulator for X which sucks less.
-
-
-Requirements
-------------
 In order to build st you need the Xlib header files.
 
-
-Installation
-------------
 Edit config.mk to match your local setup (st is installed into
 the /usr/local namespace by default).
 
@@ -67,17 +50,25 @@ necessary as root):
 
     make clean install
 
+Additionally, to make all the custom features added by me available
+you will need all the files preceding with `st-script-` to be marked
+executable and added to your PATH. There are multiple ways to do this,
+but here's a oneliner that I use (execute from the repo root directory):
 
-Running st
-----------
-If you did not install st with make clean install, you must compile
-the st terminfo entry with the following command:
+    find . -maxdepth 1 -name "st-script-*" -print0 | xargs -0 -I % sudo ln -sTf -- "$(realpath -- "%")" "/usr/local/bin/$(basename -- "%")"
 
-    tic -sx st.info
+The above command will find all the files beginning with `st-script-` and create symlinks to them in `/usr/local/bin`.
 
-See the man page for additional details.
+## References
 
-Credits
--------
-Based on Aurélien APTEL <aurelien dot aptel at gmail dot com> bt source code.
+I used these as sources of inspiration to see some examples of what can be done with st without relying solely on painful experimentation.
+Also, the suckless website is a primary source for patches, which are obligatory for any decent st build.
+
+- [Official Website](https://st.suckless.org)
+- [Luke Smith's build](https://github.com/lukesmithxyz/st)
+
+
+## Credits
+
+st is based on Aurélien APTEL <aurelien dot aptel at gmail dot com> bt source code.
 
