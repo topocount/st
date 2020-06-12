@@ -5,11 +5,9 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "DejaVuSansMono Nerd Font:pixelsize=14:antialias=true:autohint=true";
+static char *font = "DejaVu Sans Mono:pixelsize=14:antialias=true:autohint=true";
 static char *font2[] = {
-    "DejaVu Sans Mono:pixelsize=14:antialias=true:autohint=true",
-    "Hack Nerd Font Mono:pixelsize=14:antialias=true:autohint=true",
-    "Hack:pixelsize=14:antialias=true:autohint=true",
+    "Twitter Color Emoji:pixelsize=14:antialias=true:autohint=true",
 };
 
 static int borderpx = 2;
