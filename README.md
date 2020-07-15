@@ -22,7 +22,7 @@ My build of st, with focus on productivity and keyboard-driven workflow.
 
 - any window compositor
 - [dmenu](https://tools.suckless.org/dmenu/)
-- [copyq](https://github.com/hluk/copyq) (scripts can be modified by hand to work with any clipboard manager)
+- [xclip](https://github.com/astrand/xclip) (scripts can be modified by hand to work with any clipboard tool)
 
 ## Applied Patches
 

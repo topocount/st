@@ -12,5 +12,4 @@ urls="$(sed 's/.*│//g' | tr -d '\n' |
 
 chosen="$(echo "$urls" | dmenu -i -p 'Copy URL' -l 10)"
 
-copyq add "$chosen" >/dev/null 2>&1
-copyq select 0 >/dev/null 2>&1
+printf "%s" "$chosen" | xclip -selection clipboard

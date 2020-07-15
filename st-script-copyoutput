@@ -17,7 +17,4 @@ options="$(grep -F "$ps1" "$tmpfile" | sed '$ d' | tac)"
 chosen="$(printf "%s" "$options" | dmenu -p "Copy Output" -i -l 10 | sed 's/[^^]/[&]/g; s/\^/\\^/g')"
 eps1="$(echo "$ps1" | sed 's/[^^]/[&]/g; s/\^/\\^/g')"
 output="$(awk "/^$chosen$/{p=1;print;next} p&&/$eps1/{p=0};p" "$tmpfile")"
-[ -n "$output" ] && {
-    copyq add "$output"
-    copyq select 0
-}
+[ -n "$output" ] && printf "%s" "$output" | xclip -selection clipboard
