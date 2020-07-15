@@ -8,8 +8,8 @@ My build of st, with focus on productivity and keyboard-driven workflow.
 - open a URL with alt+l
 - copy a URL with alt+y
 - scroll with alt + {j, k, u, d}
-- zoom with alt+shift+ {j, k} or ctrl+ {-, =}
-- reset zoom with ctrl+shift+ =
+- zoom with alt+shift+ {j, k} or alt+ {-, =}
+- reset zoom with alt+shift+l or alt+shift+ =
 - insert arbitrary Unicode character with ctrl+shift+u
 - synchronized rendering support
 - fallback fonts
