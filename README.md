@@ -50,15 +50,6 @@ necessary as root):
 
     make clean install
 
-Additionally, to make all the custom features added by me available
-you will need all the files preceding with `st-script-` to be marked
-executable and added to your PATH. There are multiple ways to do this,
-but here's a oneliner that I use (execute from the repo root directory):
-
-    find . -maxdepth 1 -name "st-script-*" -print0 | xargs -0 -I % sudo ln -sTf -- "$(realpath -- "%")" "/usr/local/bin/$(basename -- "%")"
-
-The above command will find all the files beginning with `st-script-` and create symlinks to them in `/usr/local/bin`.
-
 ## References
 
 I used these as sources of inspiration to see some examples of what can be done with st without relying solely on painful experimentation.
