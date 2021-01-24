@@ -40,6 +40,8 @@ My build of st, with focus on productivity and keyboard-driven workflow.
 
 ## Installation
 
+Arch Linux users can install the `st-randoragon-git` AUR package.
+
 In order to build st you need the Xlib header files.
 
 Edit config.mk to match your local setup (st is installed into
