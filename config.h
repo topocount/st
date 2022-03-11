@@ -5,9 +5,12 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "DejaVu Sans Mono:pixelsize=14:antialias=true:autohint=true";
+static char *font = "MesloLGS NF:pixelsize=14:antialias=true:autohint=true";
 static char *font2[] = {
-    "Twitter Color Emoji:pixelsize=14:antialias=true:autohint=true",
+ //"Symbola:pixelsize=14:antialias=true:autohint=true",
+ "Meslo for Powerline:pixelsize=14:antialias=true:autohint=true",
+ "Nimbus Mono PS:pixelsize=14:antialias=true:autohint=true",
+ "JoyPixels:pixelsize=10:antialias=true:autohint=true"
 };
 
 static int borderpx = 2;
@@ -121,7 +124,7 @@ static const char *colorname[] = {
 	"red3",
 	"green3",
 	"yellow3",
-	"blue2",
+	"dodger blue",
 	"magenta3",
 	"cyan3",
 	"gray90",
@@ -247,7 +250,6 @@ static Shortcut shortcuts[] = {
 	{ ShiftMask,            XK_Insert,      selpaste,       {.i =  0} },
 	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
 	{ MODKEY, 				XK_l, 			externalpipe, 	{ .v = openurlcmd } },
-	{ MODKEY, 				XK_y, 			externalpipe, 	{ .v = copyurlcmd } },
 	{ MODKEY, 				XK_o, 			externalpipe, 	{ .v = copyoutputcmd } },
 	{ MODKEY|ShiftMask,     XK_K,           zoom,      		{.f = +1} },
 	{ MODKEY,	       	    XK_equal,   	zoom,      		{.f = +1} },
@@ -266,6 +268,7 @@ static Shortcut shortcuts[] = {
 	{ TERMMOD,              XK_U,           iso14755,       {.i =  0} },
 	{ TERMMOD,              XK_Return,      newterm,        {.i =  0} },
 	{ MODKEY,               XK_e,           externalpipe,   { .v =  editcontent } },
+	{ MODKEY,               XK_y,           copyurl,        {.i =  0} },
 };
 
 /*
